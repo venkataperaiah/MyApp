@@ -1,0 +1,26 @@
+<script>
+    class Product{
+        Name="Samsung Tv";
+        Rating={
+            VendorRating:{
+                "Y24":{
+                    Rate:4.2,Count:450
+                },
+                "Y23":{
+                    Rate:3.7,Count:7433
+                }
+            }
+        }
+
+        get Vendor24Rating(){
+            return this.Rating.Vendor24Rating.Y24.Rate;
+        }
+        set Vendor24Rating(newRate){
+            this.Rating.VendorRating.Y24.Rate=newRate;
+        }
+    }
+
+    let obj=new Product();
+    obj.Vendor24Rating=prompt("Enter New Rating for 2024");
+    document.write('Vendor Rating 2024: ${obj.Vendor24Rating}');
+</script>

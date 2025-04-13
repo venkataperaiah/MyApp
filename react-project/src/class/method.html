@@ -1,0 +1,16 @@
+<script>
+    class Product{
+        Name="tv";
+        Price=12345;
+        Qty=3;
+        Total(){
+            return this.Qty*this.Price;
+        }
+        Print(){
+            document.write('Name=${this.Name}<br>Price:${this.Price}<br>Total:${this.total}')
+        }
+
+    }
+    let obj=new Product();
+    obj.Print();
+</script>
